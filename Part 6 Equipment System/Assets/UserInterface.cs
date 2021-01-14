@@ -100,7 +100,7 @@ public abstract class UserInterface : MonoBehaviour
 
         if (itemOnMouse.ui != null)
         {
-            if (mouseHoberObj)
+            if (mouseHoverObj)
                 if (mouseHoverItem.CanPlaceInSlot(GetItemObject[itemsDisplayed[obj].ID]) && (mouseHoverItem.item.Id <= -1 || (mouseHoverItem.item.Id >= 0 && itemsDisplayed[obj].CanPlaceInSlot(GetItemObject[mouseHoverItem.item.Id]))))
                     inventory.MoveItem(itemsDisplayed[obj], mouseHoverItem.parent.itemsDisplayed[itemOnMouse.hoverObj]);
             
